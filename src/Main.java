@@ -35,7 +35,7 @@ public class Main {
 
         }
     }
-    //
+
     public static void printAndCheck(Object o){
         if (o instanceof Player){
             Player p = (Player) o;
