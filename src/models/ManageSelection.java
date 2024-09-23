@@ -24,7 +24,7 @@ public class ManageSelection {
     }
 
     /**
-     * Imprime el la LinkedList de
+     * Imprime la LinkedList de
      *
      * @param staff
      */
