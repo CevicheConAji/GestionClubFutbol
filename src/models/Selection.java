@@ -1,6 +1,6 @@
 package models;
 
-public class Selection {
+public class Selection implements Comparable<Selection> {
     private int id;
     private String name;
     private String lastName;
@@ -63,5 +63,23 @@ public class Selection {
                 ", apellido='" + lastName + '\'' +
                 ", edad=" + age +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Selection o) {
+        int edadDiff = this.age - o.age;
+        int nameDiff = this.name.compareTo(o.name);
+        int idDiff = this.id - o.id;
+
+        if (edadDiff != 0) {
+            return edadDiff;
+        }
+        if (nameDiff != 0) {
+            return nameDiff;
+        }
+        if (idDiff != 0) {
+            return idDiff;
+        }
+        return ;
     }
 }
