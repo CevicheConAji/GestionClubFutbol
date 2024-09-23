@@ -38,7 +38,7 @@ public class Player extends Selection {
     @Override
     public String toString() {
         return super.toString()+ " " + this.getClass().getName() +
-                "dorsal=" + bibNumber +
+                " dorsal=" + bibNumber +
                 ", demarcacion='" + demarcation + '\'' +
                 '}';
     }

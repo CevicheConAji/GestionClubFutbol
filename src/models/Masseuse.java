@@ -35,7 +35,7 @@ public class Masseuse extends Selection {
     @Override
     public String toString() {
         return super.toString() +" " +this.getClass().getName() +
-                "titulacion='" + qualification + '\'' +
+                " titulacion='" + qualification + '\'' +
                 ", aniosExperiencia=" + yearsOfExperience +
                 '}';
     }

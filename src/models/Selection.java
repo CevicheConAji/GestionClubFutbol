@@ -55,6 +55,22 @@ public class Selection implements Comparable<Selection> {
         System.out.printf(getName()+" - Viajar ");
     }
 
+
+    @Override
+    public int compareTo(Selection o) {
+        int ageDiff = this.age - o.age;
+        int nameDiff = this.name.compareTo(o.name);
+
+        if (ageDiff != 0) {
+            return ageDiff;
+        }
+        if (nameDiff != 0) {
+            return nameDiff;
+        }
+
+        return this.id - o.id;
+    }
+
     @Override
     public String toString() {
         return this.getClass().getName() +
@@ -63,23 +79,5 @@ public class Selection implements Comparable<Selection> {
                 ", apellido='" + lastName + '\'' +
                 ", edad=" + age +
                 '}';
-    }
-
-    @Override
-    public int compareTo(Selection o) {
-        int edadDiff = this.age - o.age;
-        int nameDiff = this.name.compareTo(o.name);
-        int idDiff = this.id - o.id;
-
-        if (edadDiff != 0) {
-            return edadDiff;
-        }
-        if (nameDiff != 0) {
-            return nameDiff;
-        }
-        if (idDiff != 0) {
-            return idDiff;
-        }
-        return ;
     }
 }
