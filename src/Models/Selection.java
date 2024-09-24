@@ -49,7 +49,7 @@ public class Selection implements Comparable<Selection> {
     }
 
     /**
-     * Metodo pora iniciar la Concentracion
+     * Metodo para iniciar la Concentracion
      */
     public void concentrarse(){
         System.out.printf(getName() + " - Concentracion ");
