@@ -59,7 +59,7 @@ public class ManageSelection {
     /**
      * Metodo que cuenta cuántos Player, Coach y Masseuse hay en la LinkedList
      *
-     * @param staff
+     * @param staff LinkedList
      */
     public void selectionCount(LinkedList<Selection> staff) {
         int playerCount = 0;
