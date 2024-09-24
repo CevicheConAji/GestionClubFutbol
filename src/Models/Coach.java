@@ -19,9 +19,16 @@ public class Coach extends Selection {
         this.idFederation = idFederation;
     }
 
+    /**
+     * Metodo para iniciar direcion de un Partido
+     */
     public void dirigirPartido(){
-        System.out.printf(getName()+" - diirginedo el partido");
+        System.out.printf(getName()+" - dirginedo el partido");
     }
+
+    /**
+     * Metodo para iniciar un Entrenamiento
+     */
     public void dirigirEntrenamiento(){
         System.out.printf(getName()+" - dirigiendo el entrenamiento");
     }

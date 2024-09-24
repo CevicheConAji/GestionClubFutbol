@@ -30,7 +30,7 @@ public class ManageSelection {
     }
 
     /**
-     * Imprime la LinkedList de
+     * Imprime la LinkedList
      *
      * @param staff LinkedList
      */
@@ -41,17 +41,26 @@ public class ManageSelection {
         System.out.println();
     }
 
+    /**
+     * Metodo que recibe por parámetro un Objeto y que comprueba si es una instancia de
+     * Selection, Player, Coach y Masseuse
+     * @param o - Object
+     */
     public void printAndCheckObject(Object o) {
-        if (o instanceof Selection s) {
+        if (o instanceof Selection ) {
+            Selection s = (Selection)o;
             System.out.println(s.getClass().getName() + " " + s);
         }
-        if (o instanceof Player p) {
+        if (o instanceof Player) {
+            Player p = (Player)o;
             System.out.println(p.getClass().getName() + " " + p);
         }
-        if (o instanceof Coach c) {
+        if (o instanceof Coach ) {
+            Coach c = (Coach)o;
             System.out.println(c.getClass().getName() + " " + c);
         }
-        if (o instanceof Masseuse m) {
+        if (o instanceof Masseuse) {
+            Masseuse m = (Masseuse)o;
             System.out.println(m.getClass().getName() + " " + m);
         }
     }

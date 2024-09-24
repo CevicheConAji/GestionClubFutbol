@@ -48,14 +48,25 @@ public class Selection implements Comparable<Selection> {
         this.age = age;
     }
 
+    /**
+     * Metodo pora iniciar la Concentracion
+     */
     public void concentrarse(){
         System.out.printf(getName() + " - Concentracion ");
     }
+
+    /**
+     * Metodo para iniciar el Viaje
+     */
     public void viajar(){
         System.out.printf(getName()+" - Viajar ");
     }
 
-
+    /**
+     * Compara primero por edad, nombre y id
+     * @param o the object to be compared.
+     * @return int
+     */
     @Override
     public int compareTo(Selection o) {
         int ageDiff = this.age - o.age;

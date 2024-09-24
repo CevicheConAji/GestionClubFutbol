@@ -29,9 +29,15 @@ public class Player extends Selection {
         this.demarcation = demarcation;
     }
 
+    /**
+     * Metodo para iniciar una Partida
+     */
     public void jugarPartido(){
         System.out.printf(getName() +" - Jugando Partido");
     }
+    /**
+     * Metodo para iniciar Entranamiento
+     */
     public void entrenar(){
         System.out.printf(getName() +" - Entrenando Futbolista");
     }

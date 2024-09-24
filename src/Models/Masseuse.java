@@ -29,6 +29,10 @@ public class Masseuse extends Selection {
     public void setYearsOfExperience(int yearsOfExperience) {
         this.yearsOfExperience = yearsOfExperience;
     }
+
+    /**
+     * Metodo para iniciar un Masaje
+     */
     public void darMasaje(){
         System.out.printf(getName() +" - dando masaje");
     }
