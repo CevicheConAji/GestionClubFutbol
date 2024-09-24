@@ -1,4 +1,4 @@
-package models;
+package Models;
 
 import java.util.LinkedList;
 
@@ -6,14 +6,20 @@ public class ManageSelection {
 
     public void test(LinkedList<Selection> staff) {
 
-        Selection player01 = new Player(94, "Leonel", "Messi", 40, 10, "RW");
-        Selection player02 = new Player(90, "Marc-Andre", "ter Stegen", 32, 1, "GK");
-        Selection player03 = new Player(87, "Jordi", "Alba", 46, 18, "LB");
+        Selection player01 = new Player(94, "Leonel",
+                "Messi", 40, 10, "RW");
+        Selection player02 = new Player(90, "Marc-Andre",
+                "ter Stegen", 32, 1, "GK");
+        Selection player03 = new Player(87, "Jordi",
+                "Alba", 46, 18, "LB");
 
-        Selection coach01 = new Coach(13, "Pau", "Marti", 34, "AA34");
-        Selection coach02 = new Coach(24, "Paco", "Perez", 45, "AB12");
+        Selection coach01 = new Coach(13, "Pau",
+                "Marti", 34, "AA34");
+        Selection coach02 = new Coach(24, "Paco",
+                "Perez", 45, "AB12");
 
-        Selection masseuse = new Masseuse(10, "Luffy", "DiMoonkey", 25, "Doctor", 7);
+        Selection masseuse = new Masseuse(10, "Luffy",
+                "DiMoonkey", 25, "Doctor", 7);
 
         staff.add(player01);
         staff.add(player02);

@@ -1,4 +1,4 @@
-package models;
+package Models;
 
 public class Selection implements Comparable<Selection> {
     private int id;
@@ -59,7 +59,7 @@ public class Selection implements Comparable<Selection> {
     @Override
     public int compareTo(Selection o) {
         int ageDiff = this.age - o.age;
-        int nameDiff = this.name.compareTo(o.name);
+        int nameDiff = this.name.compareToIgnoreCase(o.name);
 
         if (ageDiff != 0) {
             return ageDiff;

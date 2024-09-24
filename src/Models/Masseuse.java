@@ -1,10 +1,11 @@
-package models;
+package Models;
 
 public class Masseuse extends Selection {
     private String qualification;
     private int yearsOfExperience;
 
-    public Masseuse(int id, String name, String lastName, int age, String qualification, int yearsOfExperience) {
+    public Masseuse(int id, String name, String lastName,
+                    int age, String qualification, int yearsOfExperience) {
         super(id, name, lastName, age);
         this.qualification = qualification;
         this.yearsOfExperience = yearsOfExperience;

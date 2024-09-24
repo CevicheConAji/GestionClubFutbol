@@ -1,10 +1,11 @@
-package models;
+package Models;
 
 public class Player extends Selection {
     private int bibNumber;
     private String demarcation;
 
-    public Player(int id, String name, String lastName, int age, int bibNumber, String demarcation) {
+    public Player(int id, String name, String lastName,
+                  int age, int bibNumber, String demarcation) {
         super(id, name, lastName, age);
         this.bibNumber = bibNumber;
         this.demarcation = demarcation;

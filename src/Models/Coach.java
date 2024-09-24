@@ -1,4 +1,4 @@
-package models;
+package Models;
 
 public class Coach extends Selection {
     private String idFederation;
