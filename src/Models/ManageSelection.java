@@ -32,7 +32,7 @@ public class ManageSelection {
     /**
      * Imprime la LinkedList de
      *
-     * @param staff
+     * @param staff LinkedList
      */
     public void printSelection(LinkedList<Selection> staff) {
         for (Selection s : staff) {
